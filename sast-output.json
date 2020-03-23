@@ -1,0 +1,145 @@
+{
+    "files": [
+        {
+            "codecov.yml": "./codecov.yml"
+        },
+        {
+            "jest.config.js": "./jest.config.js"
+        },
+        {
+            "package-lock.json": "./package-lock.json"
+        },
+        {
+            "package.json": "./package.json"
+        },
+        {
+            "app.js": "./app.js"
+        },
+        {
+            ".eslintrc.json": "./.eslintrc.json"
+        },
+        {
+            "config/Config.js": "./config/Config.js"
+        },
+        {
+            "respositories/TodoRepository.js": "./respositories/TodoRepository.js"
+        },
+        {
+            "tests/unit/model.todo.test.js": "./tests/unit/model.todo.test.js"
+        },
+        {
+            "tests/integration/api.test.js": "./tests/integration/api.test.js"
+        },
+        {
+            "models/Todo.js": "./models/Todo.js"
+        },
+        {
+            ".circleci/config.yml": "./.circleci/config.yml"
+        },
+        {
+            "routes/Routes.js": "./routes/Routes.js"
+        },
+        {
+            "coverage/coverage-final.json": "./coverage/coverage-final.json"
+        },
+        {
+            "coverage/lcov-report/index.html": "./coverage/lcov-report/index.html"
+        },
+        {
+            "coverage/lcov-report/Todo.js.html": "./coverage/lcov-report/Todo.js.html"
+        },
+        {
+            "coverage/lcov-report/respositories/TodoRepository.js.html": "./coverage/lcov-report/respositories/TodoRepository.js.html"
+        },
+        {
+            "coverage/lcov-report/respositories/index.html": "./coverage/lcov-report/respositories/index.html"
+        },
+        {
+            "coverage/lcov-report/models/index.html": "./coverage/lcov-report/models/index.html"
+        },
+        {
+            "coverage/lcov-report/models/Todo.js.html": "./coverage/lcov-report/models/Todo.js.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/index.html": "./coverage/lcov-report/test-demo/index.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/app.js.html": "./coverage/lcov-report/test-demo/app.js.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/respositories/TodoRepository.js.html": "./coverage/lcov-report/test-demo/respositories/TodoRepository.js.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/respositories/index.html": "./coverage/lcov-report/test-demo/respositories/index.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/models/index.html": "./coverage/lcov-report/test-demo/models/index.html"
+        },
+        {
+            "coverage/lcov-report/test-demo/models/Todo.js.html": "./coverage/lcov-report/test-demo/models/Todo.js.html"
+        },
+        {
+            "coverage/lcov-report/routes/index.html": "./coverage/lcov-report/routes/index.html"
+        },
+        {
+            "coverage/lcov-report/routes/Routes.js.html": "./coverage/lcov-report/routes/Routes.js.html"
+        }
+    ],
+    "good_finding": {},
+    "missing_sec_header": {
+        "Web Security": [
+            {
+                "description": "Content Security Policy (CSP), a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). CSP Header was not found.",
+                "tag": "web",
+                "title": "Missing Security Header - Content-Security-Policy (CSP)"
+            },
+            {
+                "description": "X-Frame-Options (XFO) header provides protection against Clickjacking attacks.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Frame-Options (XFO)"
+            },
+            {
+                "description": "Strict-Transport-Security (HSTS) header enforces secure (HTTP over SSL/TLS) connections to the server.",
+                "tag": "web",
+                "title": "Missing Security Header - Strict-Transport-Security (HSTS)"
+            },
+            {
+                "description": "Public-Key-Pins (HPKP) ensures that certificate is Pinned.",
+                "tag": "web",
+                "title": "Missing Security Header - Public-Key-Pins (HPKP)"
+            },
+            {
+                "description": "X-XSS-Protection header set to 1 enables the Cross-site scripting (XSS) filter built into most recent web browsers.",
+                "tag": "web",
+                "title": "Missing Security Header - X-XSS-Protection:1"
+            },
+            {
+                "description": "X-Content-Type-Options header prevents Internet Explorer and Google Chrome from MIME-sniffing a response away from the declared content-type.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Content-Type-Options"
+            },
+            {
+                "description": "X-Download-Options header set to noopen prevents IE users from directly opening and executing downloads in your site's context.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Download-Options: noopen"
+            },
+            {
+                "description": "JavaScript can access Cookies if they are not marked httpOnly.",
+                "tag": "web",
+                "title": "Missing 'httpOnly' in Cookie"
+            },
+            {
+                "description": "Remove the X-Powered-By header to prevent information gathering.",
+                "tag": "web",
+                "title": "Information Disclosure - X-Powered-By"
+            }
+        ]
+    },
+    "sec_issues": {},
+    "total_count": {
+        "good": 0,
+        "mis": 9,
+        "sec": 0
+    },
+    "vuln_count": {}
+}
